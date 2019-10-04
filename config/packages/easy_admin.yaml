@@ -1,0 +1,20 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+
+        Category:
+            class: App\Entity\Category
+        User:
+            class: App\Entity\User
+            label: Users
+            list:
+                title: "Users"
+                fields:
+                    - { property: 'username', label: 'Username' }
+                    - { property: 'email', label: 'Email' }
+
+        Product:
+            class: App\Entity\Product
+            label: Product
+            list:
+                title: "Products"
